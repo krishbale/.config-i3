@@ -1,0 +1,31 @@
+#!/bin/bash
+
+# Function to check if a network interface is actively transmitting data
+is_active() {
+    # Check activity for wired interface
+    if [[ $(sudo nmcli d show enp0s20f0u1 | grep "STATE" | awk '{print $2}') == "connected" ]]; then
+        echo "1"
+    # Check activity for wireless interface
+    elif [[ $(sudo nmcli d show wlan0 | grep "STATE" | awk '{print $2}') == "connected" ]]; then
+        echo "1"
+    else
+        echo "0"
+    fi
+}
+
+# Function to get the currently connected network interface
+get_interface() {
+    nmcli d | grep connected | awk '{print $1, $4}'
+}
+
+# Main loop
+while true; do
+    if [[ $(is_active) -eq 1 ]]; then
+        echo "Active interface: $(get_interface)"
+    else
+        echo "No activity. Switching interface..."
+        # Toggle between network interfaces here if needed
+    fi
+    sleep 1
+done
+
