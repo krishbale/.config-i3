@@ -325,7 +325,7 @@ set $ws10 "10:Spotify"
 # bind program to workspace and focus to them on startup:
 assign [class="Xfce4-terminal"] $ws1
 assign [class="(?i)code"] $ws2
-assign [class="(?i)mongodb-compass"] $ws6
+assign [class="(?i)mongodb"] $ws6
 assign [class="(?i)brave"] $ws4
 assign [class="(?i)slack"] $ws8
 assign [class="(?i)note"] $ws9
@@ -336,7 +336,7 @@ assign [class="(?i)docker"] $ws7
 # automatic set focus new window if it opens on another workspace than the current:
 for_window [class=Xfce4-terminal] focus
 for_window [class=(?i)code"] focus
-for_window [class=(?i)mongodb-compass"] focus
+for_window [class=(?i)mongodb"] focus
 for_window [class=(?i)brave"] focus
 for_window [class=(?i)slack"] focus
 for_window [class=(?i)note"] focus
@@ -442,7 +442,6 @@ exec --no-startup-id /usr/bin/dunst
 exec --no-startup-id sleep 7 && brave https://github.com/endeavouros-team/endeavouros-i3wm-setup/blob/main/force-knowledge.md
 exec --no-startup-id sleep 3 && code 
 exec --no-startup-id sleep 10 && slack
-exec --no-startup-id sleep 12 && 
 
 ###############
 # system tray #
