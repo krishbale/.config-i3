@@ -310,7 +310,7 @@ set $ws5 "5:Postman"
 set $ws6 "6:Database"
 set $ws7 "7:Docker"
 set $ws8 "8:Slack"
-set $ws9 "9:NOtes"
+set $ws9 "9:Notes"
 set $ws10 "10:Spotify"
 
 # use workspaces on different displays:
@@ -319,8 +319,8 @@ set $ws10 "10:Spotify"
 #workspace $ws1 output VGA-0
 #workspace $ws2 output VGA-0
 #workspace $ws3 output HDMI-0
-#workspace $ws4 output HDMI-0
-#workspace $ws5 output HDMI-0
+workspace $ws4 output HDMI-0
+workspace $ws1 output HDMI-0
 
 # bind program to workspace and focus to them on startup:
 assign [class="Xfce4-terminal"] $ws1
@@ -328,7 +328,7 @@ assign [class="(?i)code"] $ws2
 assign [class="(?i)mongodb"] $ws6
 assign [class="(?i)brave"] $ws4
 assign [class="(?i)slack"] $ws8
-assign [class="(?i)note"] $ws9
+assign [class="(?i)Editor"] $ws9
 assign [class="(?i)spotify"] $ws10
 assign [class="(?i)postman"] $ws5
 assign [class="(?i)docker"] $ws7
@@ -339,7 +339,7 @@ for_window [class=(?i)code"] focus
 for_window [class=(?i)mongodb"] focus
 for_window [class=(?i)brave"] focus
 for_window [class=(?i)slack"] focus
-for_window [class=(?i)note"] focus
+for_window [class=(?i)Editor"] focus
 for_window [class=(?i)spotify"] focus
 for_window [class=(?i)postman"] focus
 for_window [class=(?i)docker"] focus
