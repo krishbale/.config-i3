@@ -332,7 +332,7 @@ assign [class="(?i)Editor"] $ws9
 assign [class="(?i)spotify"] $ws10
 assign [class="(?i)postman"] $ws5
 assign [class="(?i)docker"] $ws7
-
+assign [class="(?i)chrome"] $ws5
 # automatic set focus new window if it opens on another workspace than the current:
 for_window [class=Xfce4-terminal] focus
 for_window [class=(?i)code"] focus
@@ -343,6 +343,7 @@ for_window [class=(?i)Editor"] focus
 for_window [class=(?i)spotify"] focus
 for_window [class=(?i)postman"] focus
 for_window [class=(?i)docker"] focus
+for_window [class=(?i)chrome"] focus
 ##############
 # compositor #
 ##############
@@ -440,7 +441,7 @@ exec --no-startup-id /usr/bin/dunst
 # Autostart apps as you like
 #exec --no-startup-id sleep 2 && xfce4-terminal
 exec --no-startup-id sleep 7 && brave https://github.com/krishbale
-exec --no-startup-id sleep 3 && code 
+exec --no-startup-id sleep 13 && code 
 exec --no-startup-id sleep 10 && slack
 exec --no-startup-id /bin/bash -c 'ping -c 1 google.com > /dev/null && tmux new-session -d -s prod "ssh prod"' 
 exec --no-startup-id /bin/bash -c 'ping -c 1 google.com > /dev/null && tmux new-session -d -s staging "ssh staging"'
