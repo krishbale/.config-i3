@@ -444,7 +444,7 @@ exec --no-startup-id /usr/bin/dunst
 
 # Autostart apps as you like
 #exec --no-startup-id sleep 2 && xfce4-terminal
-exec --no-startup-id sleep 7 && sidekick-browser-stable https://github.com/krishbale
+exec --no-startup-id sleep 7 && brave www.speedtest.net
 exec --no-startup-id sleep 20 && code 
 #exec --no-startup-id sleep 30 && slack
 #exec --no-startup-id /bin/bash -c 'ping -c 1 google.com > /dev/null && tmux new-session -d -s prod "ssh prod"' 
