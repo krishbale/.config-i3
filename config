@@ -23,7 +23,7 @@
 # is used in the bar {} block below.
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-font pango: Fira Nerd Font 14
+font pango: Fira Nerd Font 10
 
 # set the mod key to the winkey:
 set $mod Mod4
@@ -334,6 +334,7 @@ assign [class="(?i)spotify"] $ws10
 assign [class="(?i)postman"] $ws5
 assign [class="(?i)docker"] $ws7
 assign [class="(?i)chrome"] $ws4
+assign [class="(?i)thorium"] $ws4
 assign [class="(?i)viber"] $ws10
 # automatic set focus new window if it opens on another workspace than the current:
 for_window [class=Xfce4-terminal] focus
@@ -347,6 +348,7 @@ for_window [class=(?i)postman"] focus
 for_window [class=(?i)docker"] focus
 for_window [class=(?i)chrome"] focus
 for_window [class=(?i)sidekick"] focus
+for_window [class=(?i)thorium"] focus
 for_window [class=(?i)viber"] focus
 ##############
 # compositor #
@@ -444,8 +446,8 @@ exec --no-startup-id /usr/bin/dunst
 
 # Autostart apps as you like
 #exec --no-startup-id sleep 2 && xfce4-terminal
-exec --no-startup-id sleep 7 && brave www.speedtest.net
-exec --no-startup-id sleep 20 && code 
+#exec --no-startup-id sleep 7 && brave www.speedtest.net
+#exec --no-startup-id sleep 20 && code 
 #exec --no-startup-id sleep 30 && slack
 #exec --no-startup-id /bin/bash -c 'ping -c 1 google.com > /dev/null && tmux new-session -d -s prod "ssh prod"' 
 #exec --no-startup-id /bin/bash -c 'ping -c 1 google.com > /dev/null && tmux new-session -d -s staging "ssh staging"'
@@ -525,7 +527,7 @@ client.urgent		    	$urgentred	$urgentred	$white		$yellowbrown	$yellowbrown
 # Start i3bar to display a workspace bar
 # (plus the system information i3status finds out, if available)
 bar {
-		font pango: Fira Nerd Font 14
+		font pango: Fira Nerd Font 11
 		status_command i3blocks -c ~/.config/i3/i3blocks.conf
 	    	position bottom
 #	    	i3bar_command i3bar --transparency
