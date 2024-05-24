@@ -324,7 +324,7 @@ workspace $ws1 output HDMI-0
 
 # bind program to workspace and focus to them on startup:
 assign [class="Xfce4-terminal"] $ws1
-assign [class="(?i)code"] $ws2
+assign [class="(?i)vscodium"] $ws2
 assign [class="(?i)mongodb"] $ws6
 assign [class="(?i)brave"] $ws4
 assign [class="(?i)sidekick"] $ws4
@@ -338,7 +338,7 @@ assign [class="(?i)thorium"] $ws4
 assign [class="(?i)viber"] $ws10
 # automatic set focus new window if it opens on another workspace than the current:
 for_window [class=Xfce4-terminal] focus
-for_window [class=(?i)code"] focus
+for_window [class=(?i)vscodium"] focus
 for_window [class=(?i)mongodb"] focus
 for_window [class=(?i)brave"] focus
 for_window [class=(?i)slack"] focus
